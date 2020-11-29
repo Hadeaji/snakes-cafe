@@ -35,7 +35,6 @@ def order_loop():
         meal=input('>').title()
         if meal=='Quit':
             print('You Ordered')
-            print("\n")
             for i in x:
                 print(i)
             if len(x)<1:
@@ -44,13 +43,9 @@ def order_loop():
         x.append(meal)
         counting=x.count(meal)
         if counting>1:
-            print("\n")
             print(f'** {counting} orders of {meal} have been added to your meal **')
-            print("\n")
         else:
-            print("\n")
             print(f'** {counting} order of {meal} have been added to your meal **')
-            print("\n")
 
 
 
@@ -64,19 +59,14 @@ print('**    Please see our menu below.    **')
 print('**')
 print('** To quit at any time, type "quit" **')
 print('**************************************')
-print("\n")
 
 appetizers_print()
-print("\n")
 
 entrees_print()
-print("\n")
 
 desserts_print()
-print("\n")
 
 drinks_print()
-print("\n")
 
 print('***********************************')
 print('** What would you like to order? **')
